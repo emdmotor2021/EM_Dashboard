@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EM Control — Motors / Lifts / Workshop Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app" style="display:block;">
+  <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#061029;color:#9cc0e0;font-family:sans-serif;">Loading Electrical Maintenance dashboard…</div>
+</div>
+
+<!-- Firebase (shared cloud database + file storage) -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<!-- Excel (.xlsx) and PDF export for the preservation records -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+<script src="firebase-config.js"></script>
+<script src="firebase-sync.js"></script>
+
+<script src="seed_data.js"></script>
+<script src="lubrication_seed.js"></script>
+<script src="app.js"></script>
+<script src="lubrication.js"></script>
+<script src="failure_analysis.js"></script>
+</body>
+</html>
